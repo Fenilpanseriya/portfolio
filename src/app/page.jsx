@@ -46,6 +46,7 @@ export default function Home() {
           <h1>@fenilpanseriya.dev</h1>
           <div className="menu">
             <ul>
+            <li> <a href="https://drive.google.com/file/d/1ZBz2jSqxMJsnoB3cvwRNZV8DwZTjcnJW/view?usp=drivesdk" target="_blank">Resume</a></li>
               <li className="aboutme" onClick={handleScroll}>About Me</li>
               <li className="skill" onClick={handleScroll}>Skills</li>
               <li> <a href="https://github.com/Fenilpanseriya?tab=repositories" target="_blank">Project</a></li>
