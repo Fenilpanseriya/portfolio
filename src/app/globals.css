@@ -47,18 +47,72 @@ html{
   }
 }
 
-.header{
+.header {
   width: 100%;
-  /* background-color: aliceblue; */
   overflow-x: hidden;
 }
-.headerContent{
+
+.headerContent {
   max-width: 1276px;
   margin: 0 auto;
   justify-content: space-between;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
 }
+
+.menuButton {
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItems {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 769px){
+  .headerContent{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) { /* Tablet and Mobile styles */
+  .menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .menuItems {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menuButton {
+    display: block; /* Show the menu button */
+  }
+
+  .menu.open {
+    display: block; /* Show menu when open class is added */
+    position: absolute;
+    top: 60px; /* Adjust according to header height */
+    left: 10;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
 h1{
   font-size: 1.5em;
   margin-top: 0.5rem;
@@ -391,6 +445,11 @@ p{
   font-size: 6rem;
   font-weight: bold;
 }
+@media (max-width:420px){
+  .Resume h2 {
+    font-size: 4rem;
+  }
+}
 .box{
   width:100%;
   display: flex;
@@ -451,6 +510,24 @@ p{
     margin-left: 8%;
   }
   
+}
+@media (max-width: 420px){
+  .boxes{
+    width: 100%;
+  }
+  .boxes h2 {
+    margin-left: 5%;
+    font-size: 1.5rem;
+  }
+  .boxes h3{
+    font-size: 1rem;
+  }
+  .boxes h4{
+    font-size: 1rem;
+  }
+  .boxes h3 h4 p{
+    margin-left: 8%;
+  }
 }
 
 @media only screen and (max-width:757px){
@@ -535,7 +612,10 @@ p{
  .skills h3{
   margin-left: 1%;
  }
-  
+  .skills .frontend h3{
+    font-size: 1rem;
+    margin-left: 3%;
+  }
 }
 @media only screen and (min-width:398px){
   .skills{
@@ -576,6 +656,11 @@ p{
   font-family: 'Montserrat', sans-serif;
   font-size: 6rem;
   font-weight: bold;
+}
+@media (max-width:420px){
+  .contactDetails h2 {
+    font-size: 4rem;
+  }
 }
 form{
   margin-left:6% ;
@@ -649,6 +734,11 @@ button{
   display: flex;
   flex-wrap: wrap;
  }
+ @media (max-width:420px){
+  .footerContent p{
+    font-size: 1.25rem;
+  }
+ }
  .footerImage{
   
   gap:5px;
@@ -659,3 +749,5 @@ button{
   font-weight: bold;
   margin-right: 0;
  }
+
+ 
