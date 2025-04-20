@@ -52,7 +52,7 @@ export default function Home() {
         </button>
         <div className={`menu ${menuOpen ? 'open' : ''}`}>
           <ul className="menuItems">
-            <li><a href="https://drive.google.com/file/d/1p3RaVF_HEsJe2Gp7WT-AR6Ggnjs7wutp/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><a href="https://drive.google.com/file/d/10ZQunUeQZUmcztPSTB_pDKNCA8_VojSt/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</a></li>
             <li className="aboutme" onClick={handleScroll}>About Me</li>
             <li className="skill" onClick={handleScroll}>Skills</li>
             <li><a href="https://github.com/Fenilpanseriya?tab=repositories" target="_blank" rel="noopener noreferrer">Project</a></li>
@@ -124,10 +124,14 @@ export default function Home() {
           </div>
           <div className="boxes">
             <h2 className="h23">Achievements</h2>
-
+            <h4>
+              <a href="https://www.credly.com/badges/f6235e99-1d7b-48f5-84b5-0976a409429a">
+                AWS Certified Solutions Architect
+              </a>
+            </h4>
             <h4>
               <a href="https://leetcode.com/fenilpanseriya/">
-                Solve 1100+ Problems on Leetcode.{" "}
+                Solve 1300+ Problems on Leetcode.{" "}
               </a>
             </h4>
             <h4>
@@ -146,12 +150,7 @@ export default function Home() {
                 Solving(Intermediate).
               </a>
             </h4>
-            <h4>
-              <a href="https://www.credly.com/users/fenil-panseriya/badges">
-                Got AWS certificate from AWS cloud academy foundation after
-                completing AWS course.
-              </a>
-            </h4>
+            
           </div>
           <div className="boxes">
             <h2>Skills</h2>
