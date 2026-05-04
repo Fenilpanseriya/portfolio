@@ -114,6 +114,10 @@ export default function Home() {
             <p>Jul 2025 - Present</p>
             <ul className="role-highlights">
               <li>Built scalable microservices for an AI-native commerce platform serving 300M+ users across 30+ countries.</li>
+              <li>Resolved a critical cross storefront session vulnerability affecting 40+ applications within a 24-hour SLA — deployed storefront-scoped token validation and audience-bound session controls.</li>
+              <li>Built a seller permissions module — backend service + custom UI — letting sellers define and manage fine-grained custom access controls across their stores.</li>
+              <li>Owned and resolved several critical production issues end-to-end across auth, sessions, and notification pipelines.</li>
+              <li>Designed RBAC across 20K+ storefronts and built auth module with Redis, JWT, OAuth2.0 and 95%+ test coverage.</li>
             </ul>
             <br/>
             <h3>DRC Systems, Gandhinagar.</h3>
