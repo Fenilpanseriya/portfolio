@@ -52,7 +52,6 @@ export default function Home() {
         </button>
         <div className={`menu ${menuOpen ? 'open' : ''}`}>
           <ul className="menuItems">
-            <li><a href="https://drive.google.com/file/d/10ZQunUeQZUmcztPSTB_pDKNCA8_VojSt/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</a></li>
             <li className="aboutme" onClick={handleScroll}>About Me</li>
             <li className="skill" onClick={handleScroll}>Skills</li>
             <li><a href="https://github.com/Fenilpanseriya?tab=repositories" target="_blank" rel="noopener noreferrer">Project</a></li>
@@ -72,9 +71,11 @@ export default function Home() {
             <div className="animation">
               <TypeAnimation
                 sequence={[
-                  "Hi,I'm Fenil.",
+                  "Hi, I'm Fenil.",
                   1000,
-                  " I'm Full Stack Developer.",
+                  " I'm a Full Stack Developer.",
+                  1000,
+                  " SDE @ Fynd.",
                   1000,
                 ]}
                 wrapper="span"
@@ -89,13 +90,15 @@ export default function Home() {
               />
             </div>
             <p>
-              I am full stack developer with good understanding of{" "}
-              <strong>M.E.R.N</strong> Technologies and{" "}
-              <strong>S.O.L.I.D </strong>principles.
+              I am a Software Engineer at <strong>Fynd</strong>, building
+              scalable microservices for an AI-native commerce platform serving{" "}
+              <strong>300M+ users</strong> across <strong>30+ countries</strong>.
             </p>
             <p>
-              I adapt the technology easily as technology change rapidly
-              everyday.
+              I work across the stack with <strong>Java, Spring Boot, Apache
+              Kafka, React</strong> and <strong>TypeScript</strong> — designing
+              event-driven systems with a focus on performance, security, and
+              clean APIs.
             </p>
           </div>
         </div>
@@ -106,18 +109,34 @@ export default function Home() {
           
           <div className="boxes">
             <h2>Work Experience</h2>
-            <h3>DRC Systems,Gandhinagar.</h3>
-            <p>Associate Software Engineer</p>
-            <p>Jul 2024 - Present</p>
+            <h3>Fynd (Shopsense Retail), Mumbai.</h3>
+            <p>Software Development Engineer - 1</p>
+            <p>Jul 2025 - Present</p>
+            <ul className="role-highlights">
+              <li>Built scalable microservices for an AI-native commerce platform serving 300M+ users across 30+ countries.</li>
+            </ul>
             <br/>
-            <p>SDE intern</p>
+            <h3>DRC Systems, Gandhinagar.</h3>
+            <p>Full-stack Software Engineer (Promoted from Intern)</p>
+            <p>Jul 2024 - Jul 2025</p>
+            <ul className="role-highlights">
+              <li>Built backend services for auth, sessions and email notifications; crafted reusable TS/React components for 20+ workflows.</li>
+              <li>Improved Appizap performance 35% via React code splitting, lazy loading & Module Federation — cutting load time and network requests by 40%.</li>
+              <li>Delivered low-code capabilities — workflow automation, drag-and-drop builder, and analytics widgets.</li>
+            </ul>
+            <br/>
+            <p>Full-stack Software Engineer Intern</p>
             <p>Jan 2024 - Jun 2024</p>
+            <ul className="role-highlights">
+              <li>Built MyMedico — a distributed microservice for doctor appointments using SAGA orchestration & Kafka.</li>
+              <li>Achieved zero double-booking conflicts with slot-locking and 95% XSS risk reduction.</li>
+            </ul>
           </div>
           <div className="boxes">
             <h2>Education</h2>
             <h3>Dharmsinh Desai University, Nadiad</h3>
-            <p>B.Tech in Information Technology</p>
-            <p>Sep 2020 - Present</p>
+            <p>B.Tech in Information Technology — CGPA: 8.35/10</p>
+            <p>Sep 2020 - May 2024</p>
             <h3>The School Of Science, Rajkot.</h3>
             <p>HSC-Science</p>
             <p>Jun 2018 - April-2020</p>
@@ -126,12 +145,15 @@ export default function Home() {
             <h2 className="h23">Achievements</h2>
             <h4>
               <a href="https://www.credly.com/badges/f6235e99-1d7b-48f5-84b5-0976a409429a">
-                AWS Certified Solutions Architect
+                AWS Certified Solutions Architect – Associate (Apr 2025)
               </a>
             </h4>
             <h4>
+              AWS Certified Cloud Practitioner (Feb 2025)
+            </h4>
+            <h4>
               <a href="https://leetcode.com/fenilpanseriya/">
-                Solve 1300+ Problems on Leetcode.{" "}
+                Solved 1500+ Problems on Leetcode.{" "}
               </a>
             </h4>
             <h4>
@@ -150,40 +172,76 @@ export default function Home() {
                 Solving(Intermediate).
               </a>
             </h4>
-            
+
           </div>
           <div className="boxes">
             <h2>Skills</h2>
             <div className="skills">
-              <div div className="frontend">
-                <h3>Frontend</h3>
+              <div className="languages">
+                <h3>Languages</h3>
                 <ul>
-                  <li>React.js</li>
-                  <li>Next.js(Intermidiate)</li>
-                  <li>JavaScript</li>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>TailwindCSS</li>
-                  <li>Redux</li>
-                  <li>JQuery(Familier)</li>
+                  <li>Java</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>TypeScript</li>
+                  <li>SQL / NoSQL</li>
+                  <li>C++ / C</li>
+                  <li>Go (Intermediate)</li>
                 </ul>
               </div>
               <div className="backend">
                 <h3>Backend</h3>
                 <ul>
+                  <li>Spring Boot</li>
                   <li>Node.js</li>
                   <li>Express.js</li>
-                  <li>GO(Intermidiate)</li>
-                  <li>SQL</li>
-                  <li>Docker</li>
+                  <li>Apache Kafka</li>
+                  <li>GraphQL</li>
+                  <li>REST APIs</li>
+                  <li>gRPC</li>
+                </ul>
+              </div>
+              <div className="frontend">
+                <h3>Frontend</h3>
+                <ul>
+                  <li>React.js</li>
+                  <li>Vue.js</li>
+                  <li>Next.js (Intermediate)</li>
+                  <li>Redux</li>
+                  <li>Webpack</li>
+                  <li>SSR</li>
+                  <li>HTML5 / CSS3</li>
+                  <li>TailwindCSS</li>
                 </ul>
               </div>
               <div className="database">
-                <h3>Databases</h3>
+                <h3>Databases & Caching</h3>
                 <ul>
+                  <li>PostgreSQL</li>
                   <li>MongoDB</li>
                   <li>MySQL</li>
                   <li>Redis</li>
+                </ul>
+              </div>
+              <div className="devops">
+                <h3>Cloud & DevOps</h3>
+                <ul>
+                  <li>AWS (EC2, S3, Lambda, SES, SQS, SNS, CloudWatch)</li>
+                  <li>Docker</li>
+                  <li>Kubernetes</li>
+                  <li>CI/CD</li>
+                  <li>Git</li>
+                  <li>Grafana / Prometheus</li>
+                </ul>
+              </div>
+              <div className="testing">
+                <h3>Testing</h3>
+                <ul>
+                  <li>Jest</li>
+                  <li>JUnit</li>
+                  <li>Mockito</li>
+                  <li>Jasmine</li>
+                  <li>Postman</li>
+                  <li>Swagger</li>
                 </ul>
               </div>
             </div>

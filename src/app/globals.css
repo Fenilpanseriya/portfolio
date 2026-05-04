@@ -565,8 +565,28 @@ p{
   
 }
 
-.frontend .backend .database{
+.frontend, .backend, .database, .devops, .languages, .testing{
   width: 30%;
+}
+.boxes .role-highlights{
+  margin-left: 13%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding-right: 5%;
+}
+.boxes .role-highlights li{
+  margin-bottom: 0.4rem;
+  list-style: disc inside;
+}
+@media only screen and (max-width:768px){
+  .boxes .role-highlights{
+    margin-left: 5%;
+    padding-right: 5%;
+    font-size: 0.85rem;
+  }
 }
 .skills  ul{
   font-family: 'Montserrat', sans-serif;
@@ -574,7 +594,12 @@ p{
   
   
 }
-.skills .frontend h3{
+.skills .frontend h3,
+.skills .backend h3,
+.skills .database h3,
+.skills .devops h3,
+.skills .languages h3,
+.skills .testing h3{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.75rem;
   font-weight: 600;
@@ -612,7 +637,12 @@ p{
  .skills h3{
   margin-left: 1%;
  }
-  .skills .frontend h3{
+  .skills .frontend h3,
+  .skills .backend h3,
+  .skills .database h3,
+  .skills .devops h3,
+  .skills .languages h3,
+  .skills .testing h3{
     font-size: 1rem;
     margin-left: 3%;
   }
